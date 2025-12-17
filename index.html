@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Finder Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+        <div class="logo">coursefinder.ai</div>
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search by college name, ask me...">
+        </div>
+        <div class="header-actions">
+            <a href="#" style="color: white; text-decoration: none; font-size: 0.875rem; display: none;">🏠 What's New</a>
+            <button class="icon-btn">
+                🔔
+                <span class="badge">5</span>
+            </button>
+            <div class="user-profile">
+                <div class="avatar">DG</div>
+                <span style="display: none;">Dikha Goel</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">📊</span>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">👥</span>
+                Students
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📚</span>
+                Courses
+                <span class="courses-badge">264 Fill • 32</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">💰</span>
+                Wallet
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">💳</span>
+                Commission Payments
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙️</span>
+                Allied Services
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📖</span>
+                Learning Resources
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🔗</span>
+                Quick Links
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">💬</span>
+                Submit Feedback
+            </a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="greeting">
+                <h1>Hey, Good Morning Diksha!</h1>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <button class="btn-primary" style="background: white; color: var(--primary); border: 1px solid var(--gray-300);">Refresh Dashboard</button>
+                    <button class="btn-primary">Register Student</button>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--primary);">18</div>
+                    <div class="stat-label">Conditional</div>
+                    <div class="stat-sublabel">Offer Issued</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--success);">22</div>
+                    <div class="stat-label">Un-Conditional</div>
+                    <div class="stat-sublabel">Offer Issued</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--warning);">30</div>
+                    <div class="stat-label">Payment Required</div>
+                    <div class="stat-sublabel">All Country</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" style="color: var(--danger);">8</div>
+                    <div class="stat-label">Payment Received</div>
+                    <div class="stat-sublabel">Offer Issued</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">VISA Received</div>
+                    <div class="stat-sublabel">Offer Issued</div>
+                </div>
+            </div>
+
+            <!-- Applications Table -->
+            <div class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Applications</h2>
+                    <button class="icon-btn" style="background: var(--gray-100); color: var(--gray-900);">⛶</button>
+                </div>
+
+                <div class="filters">
+                    <button class="filter-btn">📅 Year</button>
+                    <button class="filter-btn">📅 Date Created</button>
+                    <button class="filter-btn">🎯 Select Intake</button>
+                    <button class="filter-btn">🌍 Countries</button>
+                    <button class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Apply Filters</button>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pending Files ⓘ</th>
+                                <th>Lorem Ipsum (12)</th>
+                                <th>Lorem Ipsum (18)</th>
+                                <th>Academic Partner ⓘ</th>
+                                <th>University ⓘ</th>
+                                <th>Program ⓘ</th>
+                                <th>Pending Status ⓘ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ADS-001-2</td>
+                                <td>Rishi Joshi</td>
+                                <td>rishijoshi@gmail.com</td>
+                                <td>Misc Internatio...</td>
+                                <td>Sheffield Hallam...</td>
+                                <td>1 Day<br><small>27/05/2023</small></td>
+                            </tr>
+                            <tr>
+                                <td>STW2/22-23</td>
+                                <td>Virat Shah</td>
+                                <td>viratshah@gmail.com</td>
+                                <td>Misc Internatio...</td>
+                                <td>Sheffield Hallam...</td>
+                                <td>1 Day<br><small>27/05/2023</small></td>
+                            </tr>
+                            <tr>
+                                <td>STW2/22-23</td>
+                                <td>Tushar Joshi</td>
+                                <td>tusharjoshi@gmail.com</td>
+                                <td>Misc Internatio...</td>
+                                <td>Sheffield Hallam...</td>
+                                <td>1 Day<br><small>27/05/2023</small></td>
+                            </tr>
+                            <tr>
+                                <td>STW2/22-23</td>
+                                <td>Rishi Joshi</td>
+                                <td>rishijoshi@gmail.com</td>
+                                <td>Misc Internatio...</td>
+                                <td>Sheffield Hallam...</td>
+                                <td>1 Day<br><small>27/05/2023</small></td>
+                            </tr>
+                            <tr>
+                                <td>STW2/22-23</td>
+                                <td>Rishi Joshi</td>
+                                <td>rishijoshi@gmail.com</td>
+                                <td>Misc Internatio...</td>
+                                <td>Sheffield Hallam...</td>
+                                <td>1 Day<br><small>27/05/2023</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="text-align: center; padding: 1rem;">
+                    <button style="margin: 0 0.25rem; padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); background: white; border-radius: 4px; cursor: pointer;">‹</button>
+                    <button style="margin: 0 0.25rem; padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); background: var(--primary); color: white; border-radius: 4px;">1</button>
+                    <button style="margin: 0 0.25rem; padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); background: white; border-radius: 4px; cursor: pointer;">2</button>
+                    <button style="margin: 0 0.25rem; padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); background: white; border-radius: 4px; cursor: pointer;">3</button>
+                    <button style="margin: 0 0.25rem; padding: 0.5rem 0.75rem; border: 1px solid var(--gray-300); background: white; border-radius: 4px; cursor: pointer;">›</button>
+                </div>
+            </div>
+
+            <!-- Allied Services Banner -->
+            <div class="banner">
+                <h2>Allied Services</h2>
+                <p>Overseas Education Loans<br>Provide end to end overseas education loan assistance to your students for their cost of education, overseas studies abroad.</p>
+                <button class="btn-primary">Get Started</button>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <!-- News Bulletin -->
+            <div class="news-card">
+                <h3>News Bulletin</h3>
+                <div class="news-item">
+                    <div class="news-title">Indian students tops harvard university students and submit...</div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="news-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h3>Upcoming Events</h3>
+                    <div>
+                        <button style="border: none; background: none; cursor: pointer;">‹</button>
+                        <button style="border: none; background: none; cursor: pointer;">›</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image"></div>
+                    <div class="event-content">
+                        <div class="event-title">Event Name Goes here</div>
+                        <div class="event-meta">
+                            📅 7 Jan, 2023
+                        </div>
+                        <div class="event-meta">
+                            📍 University of New York
+                        </div>
+                        <div class="event-meta">
+                            👤 By: Ankur Gupta
+                        </div>
+                        <button class="btn-register">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="news-card">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#" class="quick-link">Learning Resources <span>→</span></a></li>
+                    <li><a href="#" class="quick-link">Learning Resources <span>→</span></a></li>
+                    <li><a href="#" class="quick-link">Learning Resources <span>→</span></a></li>
+                    <li><a href="#" class="quick-link">Learning Resources <span>→</span></a></li>
+                    <li><a href="#" class="quick-link">Learning Resources <span>→</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="news-card">
+                <h3>Contact Regional Manager</h3>
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-avatar"></div>
+                        <div>
+                            <div style="font-weight: 600;">Santosh Sharma</div>
+                            <div class="contact-info">+91 9876543210 | Hyderabad</div>
+                        </div>
+                    </div>
+                    <div class="contact-info">santosh123@coursefinder.com</div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-avatar"></div>
+                        <div>
+                            <div style="font-weight: 600;">Santosh Sharma</div>
+                            <div class="contact-info">+91 9876543210 | Hyderabad</div>
+                        </div>
+                    </div>
+                    <div class="contact-info">santosh123@coursefinder.com</div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-avatar"></div>
+                        <div>
+                            <div style="font-weight: 600;">Santosh Sharma</div>
+                            <div class="contact-info">+91 9876543210 | Hyderabad</div>
+                        </div>
+                    </div>
+                    <div class="contact-info">santosh123@coursefinder.com</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
