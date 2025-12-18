@@ -97,10 +97,7 @@
           <button class="filter-btn">📅 Date Created</button>
           <button class="filter-btn">🎯 Select Intake</button>
           <button class="filter-btn">🌍 Countries</button>
-          <button
-            class="btn-primary"
-            style="padding: 0.5rem 1rem; font-size: 0.875rem"
-          >
+          <button class="filter-btn color-primary border-primary">
             Apply Filters
           </button>
         </div>
@@ -147,7 +144,9 @@
               </button>
             </div>
             <div class="button-wrapper">
-              <button class="section-button background-primary color-primary">Pending</button>
+              <button class="section-button background-primary color-primary">
+                Pending
+              </button>
               <button class="section-button">Lorem ipsum</button>
               <button class="section-button">Lorem</button>
             </div>
@@ -211,66 +210,11 @@
           </div>
 
           <div style="text-align: center; padding: 1rem">
-            <button
-              style="
-                margin: 0 0.25rem;
-                padding: 0.5rem 0.75rem;
-                border: 1px solid var(--gray-300);
-                background: white;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              ‹
-            </button>
-            <button
-              style="
-                margin: 0 0.25rem;
-                padding: 0.5rem 0.75rem;
-                border: 1px solid var(--gray-300);
-                background: var(--primary);
-                color: white;
-                border-radius: 4px;
-              "
-            >
-              1
-            </button>
-            <button
-              style="
-                margin: 0 0.25rem;
-                padding: 0.5rem 0.75rem;
-                border: 1px solid var(--gray-300);
-                background: white;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              2
-            </button>
-            <button
-              style="
-                margin: 0 0.25rem;
-                padding: 0.5rem 0.75rem;
-                border: 1px solid var(--gray-300);
-                background: white;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              3
-            </button>
-            <button
-              style="
-                margin: 0 0.25rem;
-                padding: 0.5rem 0.75rem;
-                border: 1px solid var(--gray-300);
-                background: white;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              ›
-            </button>
+            <button class="pagination-button">‹</button>
+            <button class="pagination-button background-primary">1</button>
+            <button class="pagination-button">2</button>
+            <button class="pagination-button">3</button>
+            <button class="pagination-button">›</button>
           </div>
         </div>
 
@@ -414,7 +358,6 @@
         overlay.classList.toggle("active");
       }
       sidebar.addEventListener("click", (e) => {
-        console.log("cloicked");
         const listItem = e.target.closest(".nav-item");
         if (listItem) {
           const currentActive = sidebar.querySelector(".nav-item.active");
