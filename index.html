@@ -53,7 +53,6 @@
         <a href="#" class="nav-item">
           <span class="nav-icon">📚</span>
           Courses
-          <span class="courses-badge">264 Fill • 32</span>
         </a>
         <a href="#" class="nav-item">
           <span class="nav-icon">💰</span>
@@ -145,13 +144,20 @@
         <!-- Applications Table -->
         <div class="section">
           <div class="section-header">
-            <h2 class="section-title">Applications</h2>
-            <button
-              class="icon-btn"
-              style="background: var(--gray-100); color: var(--gray-900)"
-            >
-              ⛶
-            </button>
+            <div class="section-title-wrapper">
+              <h2 class="section-title">Applications</h2>
+              <button
+                class="icon-btn"
+                style="background: var(--gray-100); color: var(--gray-900)"
+              >
+                ⛶
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button class="section-button">Pending</button>
+              <button class="section-button">Lorem ipsum</button>
+              <button class="section-button">Lorem</button>
+            </div>
           </div>
 
           <div class="table-container">
@@ -402,12 +408,23 @@
     </div>
 
     <script>
+      const sidebar = document.querySelector(".sidebar");
       function toggleSidebar() {
-        const sidebar = document.querySelector(".sidebar");
         const overlay = document.querySelector(".sidebar-overlay");
         sidebar.classList.toggle("active");
         overlay.classList.toggle("active");
       }
+      sidebar.addEventListener("click", (e) => {
+        console.log("cloicked");
+        const listItem = e.target.closest(".nav-item");
+        if (listItem) {
+          const currentActive = sidebar.querySelector(".nav-item.active");
+          if (currentActive) {
+            currentActive.classList.remove("active");
+          }
+          listItem.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>
