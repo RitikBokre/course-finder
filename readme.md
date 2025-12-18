@@ -13,3 +13,5 @@ Key Features
 - Left Sidebar hidden on smaller screen size devices, Visible after clicking on header menu button.
 
 - Semantic HTML for better accessibility
+
+- Deployed Link: https://fascinating-custard-e05f3f.netlify.app/
