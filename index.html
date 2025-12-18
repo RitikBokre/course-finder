@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Course Finder Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -83,20 +89,7 @@
       <!-- Main Content -->
       <main class="main-content">
         <div class="greeting">
-          <h1>Hey, Good Morning Diksha!</h1>
-          <div style="display: flex; gap: 1rem; margin-top: 1rem">
-            <button
-              class="btn-primary"
-              style="
-                background: white;
-                color: var(--primary);
-                border: 1px solid var(--gray-300);
-              "
-            >
-              Refresh Dashboard
-            </button>
-            <button class="btn-primary">Register Student</button>
-          </div>
+          <h2>Hey, Good Morning <b>Diksha!</b></h2>
         </div>
 
         <div class="filters">
@@ -154,7 +147,7 @@
               </button>
             </div>
             <div class="button-wrapper">
-              <button class="section-button">Pending</button>
+              <button class="section-button background-primary color-primary">Pending</button>
               <button class="section-button">Lorem ipsum</button>
               <button class="section-button">Lorem</button>
             </div>
@@ -295,6 +288,12 @@
 
       <!-- Right Sidebar -->
       <aside class="sidebar-right">
+        <div class="button-wrapper">
+          <button class="btn-primary border-primary">Refresh Dashboard</button>
+          <button class="btn-primary background-primary">
+            Register Student
+          </button>
+        </div>
         <!-- News Bulletin -->
         <div class="news-card">
           <h3>News Bulletin</h3>
