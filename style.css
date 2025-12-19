@@ -574,6 +574,10 @@ td {
   background-color: var(--primary-background);
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
 /* Responsive */
 @media (min-width: 1050px) {
   .search-box {

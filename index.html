@@ -346,6 +346,7 @@
         const overlay = document.querySelector(".sidebar-overlay");
         sidebar.classList.toggle("active");
         overlay.classList.toggle("active");
+        document.body.classList.toggle("scroll-lock");
       }
       sidebar.addEventListener("click", (e) => {
         const listItem = e.target.closest(".nav-item");
