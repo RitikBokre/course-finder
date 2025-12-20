@@ -83,10 +83,45 @@
         </div>
 
         <div class="filters">
-          <button class="filter-btn">📅 Year</button>
-          <button class="filter-btn">📅 Date Created</button>
-          <button class="filter-btn">🎯 Select Intake</button>
-          <button class="filter-btn">🌍 Countries</button>
+          <div class="date-wrapper">
+            <img src="./assests/calender.svg" alt="Calendar" />
+            <input
+              type="number"
+              class="filter-input"
+              placeholder="Year"
+              name="date"
+            />
+          </div>
+          <input
+            type="date"
+            class="filter-btn"
+            placeholder="Date Created"
+            name="date created"
+          />
+          <div class="select-wrapper">
+            <img class="icon" src="./assests/calender.svg" alt="calendar" />
+            <select>
+              <option value="" disabled selected>Select intake</option>
+              <option>Jan 2025</option>
+              <option>Apr 2025</option>
+              <option>Jul 2025</option>
+              <option>Sep 2025</option>
+            </select>
+            <img class="arrow" src="./assests/down-arrow.svg" alt="arrow" />
+          </div>
+          <div class="select-wrapper">
+            <img class="icon" src="./assests/countries.svg" alt="calendar" />
+            <select>
+              <option value="" disabled selected>Countries</option>
+              <option>Australia</option>
+              <option>Canada</option>
+              <option>United States</option>
+              <option>Germany</option>
+              <option>United Kingdom</option>
+              <option>France</option>
+            </select>
+            <img class="arrow" src="./assests/down-arrow.svg" alt="arrow" />
+          </div>
           <button class="filter-btn color-primary border-primary">
             Apply Filters
           </button>
@@ -146,51 +181,65 @@
             <table>
               <thead>
                 <tr>
-                  <th>Pending Files ⓘ</th>
-                  <th>Lorem Ipsum (12)</th>
-                  <th>Lorem Ipsum (18)</th>
-                  <th>Academic Partner ⓘ</th>
-                  <th>University ⓘ</th>
-                  <th>Program ⓘ</th>
+                  <th>Ack no</th>
+                  <th>Name</th>
+                  <th>University</th>
+                  <th>Program</th>
+                  <th>Pending Since</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>ADS-001-2</td>
-                  <td>Rishi Joshi</td>
-                  <td>rishijoshi@gmail.com</td>
+                  <td>
+                    Rishi Joshi<br /><span class="mail-entry"
+                      >rishijoshi@gmail.com</span
+                    >
+                  </td>
                   <td>Misc Internatio...</td>
                   <td>Sheffield Hallam...</td>
                   <td>1 Day<br /><small>27/05/2023</small></td>
                 </tr>
                 <tr>
                   <td>STW2/22-23</td>
-                  <td>Virat Shah</td>
-                  <td>viratshah@gmail.com</td>
+                  <td>
+                    Virat Shah<br /><span class="mail-entry"
+                      >viratshah@gmail.com</span
+                    >
+                  </td>
                   <td>Misc Internatio...</td>
                   <td>Sheffield Hallam...</td>
                   <td>1 Day<br /><small>27/05/2023</small></td>
                 </tr>
                 <tr>
                   <td>STW2/22-23</td>
-                  <td>Tushar Joshi</td>
-                  <td>tusharjoshi@gmail.com</td>
+                  <td>
+                    Tushar Joshi<br /><span class="mail-entry"
+                      >tusharjoshi@gmail.com</span
+                    >
+                  </td>
                   <td>Misc Internatio...</td>
                   <td>Sheffield Hallam...</td>
                   <td>1 Day<br /><small>27/05/2023</small></td>
                 </tr>
                 <tr>
                   <td>STW2/22-23</td>
-                  <td>Rishi Joshi</td>
-                  <td>rishijoshi@gmail.com</td>
+                  <td>
+                    Rishi Joshi<br /><span class="mail-entry"
+                      >rishijoshi@gmail.com</span
+                    >
+                  </td>
                   <td>Misc Internatio...</td>
                   <td>Sheffield Hallam...</td>
                   <td>1 Day<br /><small>27/05/2023</small></td>
                 </tr>
                 <tr>
                   <td>STW2/22-23</td>
-                  <td>Rishi Joshi</td>
-                  <td>rishijoshi@gmail.com</td>
+                  <td>
+                    Rishi Joshi<br /><span class="mail-entry"
+                      >rishijoshi@gmail.com</span
+                    >
+                  </td>
                   <td>Misc Internatio...</td>
                   <td>Sheffield Hallam...</td>
                   <td>1 Day<br /><small>27/05/2023</small></td>
