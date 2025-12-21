@@ -523,6 +523,7 @@ td:last-of-type > small {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  user-select: none;
 }
 
 .news-card h3 {
@@ -546,7 +547,7 @@ td:last-of-type > small {
   justify-content: center;
 }
 
-.arrow-btn:hover{
+.arrow-btn:not(:disabled):hover {
   background: var(--gray-50);
   border-color: #333;
 }
@@ -762,5 +763,9 @@ td:last-of-type > small {
 
   .sidebar-overlay {
     display: none !important;
+  }
+
+  .scroll-lock {
+    overflow: auto;
   }
 }
