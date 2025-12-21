@@ -546,6 +546,11 @@ td:last-of-type > small {
   justify-content: center;
 }
 
+.arrow-btn:hover{
+  background: var(--gray-50);
+  border-color: #333;
+}
+
 .arrow-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
