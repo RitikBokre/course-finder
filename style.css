@@ -422,6 +422,7 @@ body {
 .section-title-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .section-title {
@@ -432,7 +433,6 @@ body {
 .button-wrapper {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
 }
 
 .section-button {
@@ -740,6 +740,10 @@ td:last-of-type > small {
 
   .header {
     padding: 1rem 3rem;
+  }
+
+  .sidebar-right {
+    margin-top: 1.5rem;
   }
 }
 
