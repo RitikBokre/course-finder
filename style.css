@@ -97,7 +97,7 @@ body {
 }
 
 .icon-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--gray-100);
   border: none;
   color: #fff;
   width: 36px;

@@ -6,7 +6,7 @@ Key Features
 
 - Responsive layout (desktop, tablet, and mobile)
 
-- Breakpoints on 1325px, 1050px.
+- Breakpoints on 1325px, 996px.
 
 - Left Sidebar list items have active style, if we click another list item active style applies on that particular item.
 
