@@ -328,6 +328,7 @@ body {
 /* Stats Cards */
 .stats-wrapper {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 1.5rem 1rem;
   padding: 1rem 0;
